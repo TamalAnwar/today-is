@@ -1,0 +1,30 @@
+/*Giving the wrapper minimum dimensions*/
+.wrapper {
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+/*Day specific CSS codes */
+/* saturday_bg controls the background for the entire body*/
+/* while just saturday changes the color of the inner wrapper */
+/* In Bangladesh, week starts on Saturday and the day I coded was Saturday, so.. */
+.saturday_bg {background-color: #FCFA22;}
+.saturday {background-color: #FFC1C1;}
+
+.sunday_bg {background-color: #7ebca1;}
+.sunday {background-color: #e6e6fa;}
+
+.monday_bg {background-color: #ffb193;}
+.monday {background-color: #dd3c46}
+
+.tuesday_bg {background-color: #f0f8ff;}
+.tuesday {background-color: #e6e6fa;}
+
+.wednesday_bg {background-color: #1c7293;}
+.wednesday {background-color: #87CEEB;}
+
+.thursday_bg {background-color: #CEEB87;}
+.thursday {background-color: #A487EB;}
+
+.friday_bg {background-color: #1c7293;}
+.friday {background-color: #f0f8ff;}
