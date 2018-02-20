@@ -3,7 +3,8 @@
 // Calling and assigning the variables here so I can use them in <HEAD>
 
 // Gets the current day, this is how all the magic happens!
-    $day_of_the_week = date('l'); // Returns the day eg: Saturday
+    $day_of_the_week = "Monday";
+    // $day_of_the_week = date('l'); // Returns the day eg: Saturday
 // Making the day into all lowercase so I can use that on places, see below:
     $current_day = strtolower($day_of_the_week);
 // Getting year, month and day, it's not required but thought of displaying it on page.
@@ -26,18 +27,22 @@
         <!-- I added a class called wrapper and the saturday class to change a color of current day  -->
         <div class="wrapper <?php echo $current_day; ?>">
         <?php
-            echo "<p>$month $day, $year</p>";
+            // echo "<p>$month $day, $year</p>";
             echo "<h1>Today is $day_of_the_week! </h1>";
-            echo "<p>Welcome! it's $day_of_the_week, listen to this song!</p>";
+            echo "<p>It's $day_of_the_week, $month $day. listen to this song!</p>";
             // Here I have called a different file to match the current day saturday.php
             // Inside that file I have a simple YouTube embed code.
-            include "inc/$current_day.php";
+            ?>
+            <div class="video">
+                <?php include 'inc/'.$current_day.'.php'; ?>
+            </div>
+            <p>Come back everyday to start your day with a different song. <iframe src="https://www.facebook.com/plugins/share_button.php?href=http%3A%2F%2Fwww.tamalanwar.com%2Fprojects%2Ftoday-is%2F&layout=button_count&size=small&mobile_iframe=true&appId=114661981960459&width=69&height=20" width="69" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></p>
+
+            <?php
             // A less cheesy way to give myself some credit :)
-            echo "<p>Come back everyday to start your day with a different song.</p>";
-            echo "<br><small>Put together by Tamal Anwar on 2018 - <a href='https://github.com/TamalAnwar/today-is' target='_blank'>Github</a></small>";
+            echo "<br><small>Put together by Tamal Anwar on 2018 - <a href='https://github.com/TamalAnwar/today-is' target='_blank'>{Source code}</a></small>";
         ?>
         </div>
-
     </body>
 </html>
 <!-- That's all folks! -->
