@@ -11,6 +11,7 @@ body {
     width: 600px;
     margin: 0 auto;
     padding: 20px;
+    box-shadow: 0 10px 50px rgba(164, 156, 170, 0.59);
 }
 /*Day specific CSS codes */
 /* saturday_bg controls the background for the entire body*/
@@ -29,7 +30,7 @@ body {
 .monday_bg {
     background-image: url(img/monday.jpg);
     background-color: #ffb193;}
-.monday {background-color: #78d4e0;}
+.monday {background-color: #dcde73;}
 
 .tuesday_bg {
     background-image: url(img/tuesday.jpg);

@@ -3,8 +3,8 @@
 // Calling and assigning the variables here so I can use them in <HEAD>
 
 // Gets the current day, this is how all the magic happens!
-    $day_of_the_week = "Monday";
-    // $day_of_the_week = date('l'); // Returns the day eg: Saturday
+    // $day_of_the_week = "Monday";
+    $day_of_the_week = date('l'); // Returns the day eg: Saturday
 // Making the day into all lowercase so I can use that on places, see below:
     $current_day = strtolower($day_of_the_week);
 // Getting year, month and day, it's not required but thought of displaying it on page.
@@ -20,6 +20,11 @@
         <!-- Here I am using the day to display as site title -->
         <title>Today is <?php echo $day_of_the_week; ?>!</title>
         <link rel="stylesheet" href="style.css">
+        <meta property="og:url" content="http://www.tamalanwar.com/projects/today-is" />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="Today is <?php echo $day_of_the_week; ?>! an awesome day!" />
+        <meta property="og:description" content="Start your day with this amazing song! Get charged up!" />
+        <meta property="og:image" content="http://www.tamalanwar.com/projects/today-is/img/og.jpg" />
     </head>
     <!-- I have put the day as class so I can also change the background color of a different day -->
     <!-- I added an extra _bg at the end so I can use just saturday for the use in wrapper  -->
